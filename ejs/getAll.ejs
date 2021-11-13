@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include('./partials/head'); %>
+</head>
+<body>
+<%- include('./partials/navbar'); %>
+<div class="container">
+    <h1>Get All Page</h1>
+
+    <div id="app">
+        <li class="list-group-item" v-for="server in servers">
+            {{ server.name }}
+        </li>
+    </div>
+</div>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script src="/app.js"></script>
+</body>
+</html>
