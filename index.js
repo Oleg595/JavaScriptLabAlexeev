@@ -27,9 +27,9 @@ app.get('/remove', (req, res) => {
     res.render('remove', {title: 'Remove Page', active: 'remove'})
 })
 
-//app.get('/getAll', (req, res) => {
-//    res.render('getAll', {title: 'Get All Page', active: 'get all'})
-//})
+app.get('/getStudent', (req, res) => {
+    res.render('getStudent', {title: 'Get And Edit Student Page', active: 'get and edit student'})
+})
 
 app.listen(PORT, () => {
     console.log(`Server has been started on port ${PORT}...`)

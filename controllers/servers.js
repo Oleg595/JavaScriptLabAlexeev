@@ -18,3 +18,8 @@ export const remove = (req, res) => {
     studentList.removeStudent(req.params.id)
     res.status(200).json({message: 'Server has been removed.'})
 }
+
+export const edit = (req, res) => {
+    studentList.edit(req.params.id, req.params.name)
+    res.status(200).json({message: 'Server has been edit successfully.'})
+}

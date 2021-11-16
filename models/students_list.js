@@ -25,6 +25,11 @@ export class StudentsList {
         return this.data
     }
 
+    edit(i, newName){
+        this.data[i].name = newName
+        this.saveChanges()
+    }
+
     saveChanges(){
         fs.writeFileSync(path, JSON.stringify({newId: this.newId, studentsList: (this.data != null) ? this.data : {}}))
     }
